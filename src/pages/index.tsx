@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import localFont from "next/font/local";
-import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 
 const geistSans = localFont({
@@ -25,9 +23,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable}`}
       >
-        <main className={styles.main}>
+        <main>
          <Link href="/about">Go to about</Link>
          <br/>
          <Link href="/blog">Go to blog</Link>
